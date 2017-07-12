@@ -1,0 +1,37 @@
+
+<html>
+    <head>
+        <title>Girl Education-Confess</title>
+        <link rel='stylesheet' href="maincss.css">
+        <script>
+    function validateForm() {
+    var x = document.forms["confession"]["title"].value;
+    if (x == null || x == "") {
+        alert("Oops! Title is required for submission.");
+        return false;
+    }
+    else{
+        alert("Thanks! For sharing your expression.")
+    }
+    
+}
+    </script>
+    </head>
+    <body id='bodyconfess'>
+        
+            
+        <p id='head_about' style="margin: 25px 25px 25px 25px; color: red">Confession</p>
+        <br>
+        <form name="confession">
+            <fieldset>
+        <legend style='color: aliceblue'>Write your experience</legend>
+        <p id='about' style='color: whitesmoke'>Title:</p>
+        <textarea id='t1' cols="80" rows='1' maxlenght='80' autofocus='autofocus' required name="title"></textarea><br>
+        <p id='about' style='color: whitesmoke'> Share your experience:</p>
+        <textarea id='t2' cols="80" rows="7" maxlength='1000' wrap='hard' name="story" ></textarea><br><br>
+        <button class="button button1" style="border-radius: 10px;margin: 4px 2px;-webkit-transition-duration: 0.4s;transition-duration: 0.4s;cursor: pointer;" onclick='validateForm();'>SUBMIT</button>
+        <button class="buttonreset button2">RESET</button>
+            </fieldset>
+        </form>   
+    </body>
+</html>

@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Girl Education</title>
+        <style>  
+            .button{
+            background-color: #4CAF50;
+            border: 1px solid green;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            float: left;
+            }
+
+           .button:hover {
+            background-color: #3e8e41;
+            }
+            .buttonm:hover {
+            background-color: #4CAF50;
+            }
+table{
+    width: 320px;
+    padding: 10px;
+    opacity: 1;
+    font-family: "Monotype Corsiva";
+    margin: 10;
+    font-size: 25px;
+    color: white;
+    border-radius:15px;
+}   
+input[type=text]{
+    width: auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb;
+    border-radius: 4px;
+      }
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: " >>";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}      
+        </style>
+        <script>
+            function validatelogin(){
+            var x=document.login.password.value;
+            if(x.length<=8){
+            alert("Please enter password of more than 8 characters!");
+            document.login.password.focus();
+            return false;
+        }
+        document.getElementById("login").reset();
+       return (true);
+    }
+        </script>
+    </head>
+    <body style='background-image: url("img10.png");background-repeat: no-repeat;background-position: right top;background-size: cover;background-size: 100%;'>
+        <pre> <marquee direction="left" behaviour="slide" loop="INFINITE" width="70%" style='font-family: "Monotype Corsiva"; font-size: 18px; color: white'>"A girl getting an education learns more than reading and arithmetic. She stands up for her rights. She goes after her dreams. And this kind of change happens fast."</marquee>                     <a id="link1" href="main.html" style='font-family: "Georgia"; font-size: 18px; color: white;'>LOGOUT</a>   <a id="link1" href="register.html" style='font-family: "Georgia"; font-size: 18px; color: white;'>REGISTER</a>
+        </pre>
+           <button class='button buttonm' style=" width: 58.42%;" >GIRL CHILD EDUCATION</button>
+           <a href='main.html' target=""><button class="button" style="cursor: pointer;">HOME</button></a>
+           <a href="aboutus.html"><button class="button" style="cursor: pointer;">ABOUT US</button></a>
+           <a href="confession.html"><button class="button" style="cursor: pointer;">YOUR STORY</button></a>
+           <a href="photos.html"><button class="button" style="cursor: pointer;">PHOTOS</button></a>
+           <br>
+           <br>
+           <br>
+           <br>
+          <br>
+        
+           <table align="right"  cellpadding="25px">
+<form name="login" onsubmit="return(validatelogin());" action="loggedin.html"><tr><td><pre>
+USERNAME    :     <input type="text" name="username" placeholder="Username" required><br>
+PASSWORD    :     <input type="text" name="password" placeholder="Password" min='8' required>
+             <button class="button" style="vertical-align: middle" onclick="validatelogin();"><span>LOGIN &nbsp;</span></button>
+      </pre> </td></tr></form>
+           </table>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+
+<html>
+    <head>
+        <title>Girl Education-Register</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='maincss.css'>
+        <script src="registervalidate.js"></script>
+    </head>
+    <body background="img11.jpg" style="background-repeat: no-repeat; background-size: cover; ">
+        <p id='login'> Enter the following details to register:</p>
+        <form name="logon" autocomplete='on' onsubmit="return(validateForm());">
+            <pre id='soft'>
+            
+            Name                           :    <input type="text" name="Fname" placeholder="First Name" id='name' autofocus> <input type="text" name="mname" placeholder="Middle Name" id='name' ><input type="text" name="lname" placeholder="Last Name" id='name'>
+            Username                    :    <input type="text" name="username" placeholder="Username"  >
+            DOB                           :    <input type="text" name="dob" placeholder="Date Of Birth(dd-mm-yyyy)"  >
+            E-mail Address           :    <input type="text" name="email" placeholder="E-Mail Address" >
+            Password                   :     <input type="text" name="password" placeholder="Password(min. 8 characters)" min='8'>
+            Re-Enter Password   :     <input type="text" name="repass" placeholder="Re-Enter Password" ></pre>
+<pre>                                 <input type='submit' value="SUBMIT" class="button button1" onclick='validateForm();'>                                 <input type='reset' value="RESET" class="button button2">
+                                     
+            </pre>
+
+        </form>
+    </body>
+</html>
